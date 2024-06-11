@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #0EA990;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+i{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    border-bottom: solid #047663;
+    
+}
+
+.nav1 img{
+    height: 11vh;
+   
+}
+
+.nav2{
+    display: flex;
+    gap: 4vw;
+}
+
+.nav2 h1{
+    color: white;
+    font-size: 1.4vw;
+    font-weight: 700;
+    transition: color ease .5s;
+    cursor: pointer;
+}
+
+.nav2 h1:hover{
+    color: #FEC92F;
+}
+
+.nav3{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.nav3 i{
+    font-size: 2.5vw;
+    color: white;
+}
+
+.nav3 i::after{
+    content: "";
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    background-color: #FEC91F;
+    border-radius: 100%;
+}
+
+.nav3 button{
+    padding: 20px 40px;
+    color: #FEC91F;
+    border-radius: 50px;
+    border-color: #FEC91F;
+    background-color: white;
+    font-weight: 800;
+    font-size: 1.2vw;
+}
+
+.cart{
+    height: 80vh;
+    width: 40vw;
+    background-color: #047663;
+    z-index: 99;
+    position: absolute;
+    right: 0;
+    border-radius: 20px 0 0 20px;
+    transform: translateX(100%);
+}
+
+.upper{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid #0EA990;
+}
+
+.upper h1{
+    color: white;
+    font-size: 3.5vw;
+    font-family: cursive;
+}
+
+.upper i{
+    font-size: 3.5vw;
+    color: white;
+}
+
+.main-area{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    color: white;
+
+}
+
+.shop{
+   position: absolute;
+   height: 100vh;
+   width: 100%;
+   z-index: 999; 
+   background-color: #0EA990;
+   display: flex;
+   align-items: center;
+   gap: 2vw;
+   display: none;
+}
+
+.shop img{
+   height: 90vh;
+   border-radius: 0 20px 20px 0;
+}
+
+.shop h1{
+   font-size: 4vw;
+   color: white;
+   -webkit-text-stroke: 2px black;
+   font-family: cursive;
+}
+
+.shop i{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 4vw;
+}
+
+.hero{
+    height: 82vh;
+    display: flex;
+}
+
+.hero1{
+    width: 60%;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.hero1 h1{
+    font-size: 5vw;
+    font-weight: 900;
+    font-family: cursive;
+    color: white;
+}
+
+.hero1 p{
+    font-size: 1.5vw;
+    color: white;
+}
+
+.hero1 button{
+    padding: 20px 40px;
+    color: #FEC91F;
+    border-radius: 50px;
+    border-color: #FEC91F;
+    background-color: white;
+    font-weight: 800;
+    font-size: 1.2vw;
+}
+
+.wafers{
+   position: relative;
+}
+
+
+.salt img{
+    height: 100vw;
+}
+
+
+.wafers img{
+    position: absolute;
+    height: 80vh;
+    rotate: -20deg;
+}
+
+.corns{
+    opacity: 0;
+}
+
+.hott{
+    opacity: 0;
+}
+
+
+.waf{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+ 
+
+.mirchi{
+    position: absolute;
+    top: 70%;
+    right: -10%;
+}
+
+.mirchi2{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.potato{
+    position: absolute;
+    top: 80%;
+    left: 55%;
+}
+
+.leaf{
+    position: absolute;
+    top: 20%;
+    left: 80%;
+}
+
+.cheese{
+    height: 12vh;
+    position: absolute;
+    top: 19%;
+   left: 10%;
+   rotate: 20deg;
+   opacity: 50%;
+}
+
+.arrow{
+    height: 30vh;
+    position: absolute;
+    top: 68%;
+   left: 40%;
+   rotate: -40deg;
+   opacity: 20%; 
+}
+
+.burger{
+    height: 20vh;
+    position: absolute;
+    top: 68%;
+   left: 10%;
+   rotate: 40deg;
+   opacity: 20%; 
+}
+
+.change-chips{
+    z-index: 99;
+}
+
+.chili{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 99;
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color ease .1s;
+}
+
+.chili:hover{
+    background-color: #FEC91F;
+    border: solid white;
+    
+}
+
+.corn{
+   
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 99;
+    position: absolute;
+    top: 35%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color ease .1s;
+}
+
+
+.corn:hover{
+    background-color: #FEC91F;
+    border: solid white;
+    
+}
+
+.hot{
+
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color ease .1s;
+}
+
+
+.hot:hover{
+    background-color: #FEC91F;
+    border: solid white;
+    
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
